@@ -4,7 +4,15 @@ Kaiwen Cui, Yingchen Yu, Fangneng Zhan,  Shengcai Liao,  Shijian Lu, Eric Xing
 
 *CVPR 2023*
 
-**HERE: Add a simple picture from your results**
+## Samples from the style-ganv2 - trained 680 epochs
+
+### DA (Baseline)
+
+![](./report_images/da-baseline.png)
+
+### KD-DLGAN
+
+![](./report_images/kd-dlgan.png)
 
 This folder provides a re-implementation of this paper in PyTorch, developed as part of the course METU CENG 796 - Deep Generative Models. The re-implementation is provided by:
 * Ibrahim Ersel Yiğit, e244907@metu.edu.tr 

@@ -65,7 +65,6 @@ class KDLoss(Loss):
         do_Dmain = (phase in ['Dmain', 'Dboth'])
         do_Gpl   = (phase in ['Greg', 'Gboth']) and (self.pl_weight != 0)
         do_Dr1   = (phase in ['Dreg', 'Dboth']) and (self.r1_gamma != 0)
-        # print(phase)
         gen_img = None
         gen_features = None
         # Gmain: Maximize logits for generated images.
@@ -108,8 +107,6 @@ class KDLoss(Loss):
                 training_stats.report('Loss/signs/fake', gen_logits.sign())
                 
                 loss_Dgen = torch.nn.functional.softplus(gen_logits) # -log(1 - sigmoid(gen_logits))
-            with torch.autograd.profiler.record_function('Dgen_backward'):
-                pass # loss_Dgen is used in KD loss refactor
 
         # Dmain: Maximize logits for real images.
         # Dr1: Apply R1 regularization.
