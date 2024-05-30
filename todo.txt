@@ -1,0 +1,5 @@
+- jupiter text label retriever açıkla
+- dosyaları linklerini kontrol et veya linkleri sil
+- projeyi drive'a at
+- README ye resultları ekle
+- README Optional kısmı
